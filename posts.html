@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bootstrap Theme</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark p-0">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">Blogen</a>
+                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                     <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <div id="navbarCollapse" class="collapse navbar-collapse">
+                     <ul class="navbar-nav">
+                         <li class="nav-item px-2">
+                             <a href="index.html" class="nav-link">Dashboard</a>
+                         </li>
+                         <li class="nav-item px-2">
+                            <a href="posts.html" class="nav-link active">Posts</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="categories.html" class="nav-link">Categories</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="users.html" class="nav-link">Users</a>
+                        </li>
+                     </ul>
+                     <ul class="navbar-nav ms-auto">
+                         <li class="nav-item dropdown me-3">
+                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                                 <i class="fas fa-user"></i> Welcome Gautam
+                             </a>
+                             <div class="dropdown-menu">
+                                 <a href="profile.html" class="dropdown-item">
+                                     <i class="fas fa-user-circle"></i> Profile
+                                 </a>
+                                 <a href="settings.html" class="dropdown-item">
+                                    <i class="fas fa-cog"></i> Settings
+                                </a>
+                             </div>
+                         </li>
+                         <li class="nav-item">
+                             <a href="login.html" class="nav-link">
+                                 <i class="fas fa-user-times"></i> Logout
+                             </a>
+                         </li>
+                     </ul>
+                 </div>
+            </div>
+        </nav>
+
+        <header id="main-header" class="py-2 bg-secondary text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>
+                            <i class="fas fa-pencil-alt"></i> Posts
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <section id="search" class="py-4 mb-4 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 ms-auto">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search Posts....">
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="posts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Latest Posts</h4>
+                            </div>
+                            <table class="table table-striped">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Title</th>
+                                        <th>Category</th>
+                                        <th>Date</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Post 1</td>
+                                        <td>WebDev</td>
+                                        <td>4 May 2020</td>
+                                        <td>
+                                            <a href="details.html" style="text-decoration: none;">
+                                                <i class="fas fa-angle-double-right"></i> Details
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Post 2</td>
+                                        <td>Tech</td>
+                                        <td>4 May 2020</td>
+                                        <td>
+                                            <a href="details.html" style="text-decoration: none;">
+                                                <i class="fas fa-angle-double-right"></i> Details
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Post 3</td>
+                                        <td>Health</td>
+                                        <td>4 May 2020</td>
+                                        <td>
+                                            <a href="details.html" style="text-decoration: none;">
+                                                <i class="fas fa-angle-double-right"></i> Details
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Post 4</td>
+                                        <td>WebDev</td>
+                                        <td>4 May 2020</td>
+                                        <td>
+                                            <a href="details.html" style="text-decoration: none;">
+                                                <i class="fas fa-angle-double-right"></i> Details
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Post 5</td>
+                                        <td>WebDev</td>
+                                        <td>4 May 2020</td>
+                                        <td>
+                                            <a href="details.html" style="text-decoration: none;">
+                                                <i class="fas fa-angle-double-right"></i> Details
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Post 6</td>
+                                        <td>WebDev</td>
+                                        <td>4 May 2020</td>
+                                        <td>
+                                            <a href="details.html" style="text-decoration: none;">
+                                                <i class="fas fa-angle-double-right"></i> Details
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <nav class="ms-4">
+                                <ul class="pagination">
+                                    <li class="page-item disabled">
+                                        <a href="#" class="page-link">Previous</a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a href="#" class="page-link">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="main-footer" class="bg-dark text-white mt-3 p-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p class="lead text-center">
+                           <small> Copyright &copy; <span id="year"></span> Blogen</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script>
+            $('#year').text(new Date().getFullYear());
+        </script>
+    </body>
+</html>
